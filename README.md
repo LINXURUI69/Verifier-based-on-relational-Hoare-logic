@@ -8,8 +8,11 @@ The problem we are addressing is currently done by using various techniques such
 Some previous works on relational Hoare logic and its applications are:
 
 Benton, N. (2004). Relational semantics for effect-based program transformations. In Proceedings of the 9th ACM SIGPLAN International Conference on Functional Programming (ICFP '04), pp. 93-1041
+
 Barthe, G., D’Argenio, P.R., and Rezk, T. (2004). Secure information flow by self-composition. In Proceedings of the 17th IEEE Computer Security Foundations Workshop (CSFW '04), pp. 100-1142
+
 Barthe, G., Grégoire, B., and Zanella-Béguelin, S. (2011). Formal certification of code-based cryptographic proofs. In Proceedings of the 36th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL '09), pp. 90-1013
+
 What is new in our project is that we aim to implement a verifier that can handle different types of relational properties and programs in a unified framework, using relational Hoare logic as the underlying proof system. We think we will be successful because we have a solid theoretical foundation and a clear design for our verifier. We plan to use an existing verification tool such as Why3 or F* as a backend for our verifier, and leverage their support for automated theorem provers and interactive proof assistants.
 
 There are many security applications of our project, such as verifying confidentiality, integrity, authenticity, and availability of programs that manipulate sensitive data or communicate over insecure channels. For example, we can use our verifier to prove that a program does not leak any information about its secret inputs to an adversary, or that two versions of a program are functionally equivalent and have the same cost.
